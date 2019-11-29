@@ -57,7 +57,7 @@
     self.imageRequestID = imageRequestID;
     self.selectPhotoButton.selected = model.isSelected;
     self.selectImageView.image = self.selectPhotoButton.isSelected ? self.photoSelImage : self.photoDefImage;
-	self.imageView.alpha = self.selectPhotoButton.isSelected ? 0.3 : 1;
+	self.imageView.alpha = self.selectPhotoButton.isSelected ? 0.4 : 1;
     self.indexLabel.hidden = !self.selectPhotoButton.isSelected;
     
     self.type = (NSInteger)model.type;
@@ -140,7 +140,7 @@
         self.didSelectPhotoBlock(sender.isSelected);
     }
     self.selectImageView.image = sender.isSelected ? self.photoSelImage : self.photoDefImage;
-	self.imageView.alpha = sender.isSelected ? 0.3 : 1;
+	self.imageView.alpha = sender.isSelected ? 0.4 : 1;
     if (sender.isSelected) {
         [UIView showOscillatoryAnimationWithLayer:_selectImageView.layer type:TZOscillatoryAnimationToBigger];
         // 用户选中了该图片，提前获取一下大图

@@ -332,7 +332,7 @@
 }
 
 - (void)configDefaultBtnTitle {
-    self.doneBtnTitleStr = [NSBundle tz_localizedStringForKey:@"Done"];
+    self.doneBtnTitleStr = @"发送";
     self.cancelBtnTitleStr = [NSBundle tz_localizedStringForKey:@"Cancel"];
     self.previewBtnTitleStr = [NSBundle tz_localizedStringForKey:@"Preview"];
     self.fullImageBtnTitleStr = [NSBundle tz_localizedStringForKey:@"Full image"];

@@ -223,8 +223,8 @@ static CGFloat itemMargin = 5;
     _previewButton.titleLabel.font = [UIFont systemFontOfSize:16];
     [_previewButton setTitle:tzImagePickerVc.previewBtnTitleStr forState:UIControlStateNormal];
     [_previewButton setTitle:tzImagePickerVc.previewBtnTitleStr forState:UIControlStateDisabled];
-    [_previewButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [_previewButton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateDisabled];
+    [_previewButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [_previewButton setTitleColor:[UIColor colorWithWhite:1 alpha:0.3] forState:UIControlStateDisabled];
     _previewButton.enabled = tzImagePickerVc.selectedModels.count;
     
     if (tzImagePickerVc.allowPickingOriginalPhoto) {

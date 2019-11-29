@@ -401,6 +401,7 @@
 - (UIAlertController *)showAlertWithTitle:(NSString *)title {
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:nil preferredStyle:UIAlertControllerStyleAlert];
     [alertController addAction:[UIAlertAction actionWithTitle:[NSBundle tz_localizedStringForKey:@"OK"] style:UIAlertActionStyleDefault handler:nil]];
+	alertController.view.tintColor = [UIColor colorWithRed:(54/255.0) green:(181/255.0) blue:(157/255.0) alpha:1.0];
     [self presentViewController:alertController animated:YES completion:nil];
     return alertController;
 }

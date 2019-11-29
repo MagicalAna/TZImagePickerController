@@ -271,7 +271,7 @@
     self.notScaleImage = YES;
     self.needFixComposition = NO;
     self.statusBarStyle = UIStatusBarStyleLightContent;
-    self.cannotSelectLayerColor = [[UIColor whiteColor] colorWithAlphaComponent:0.8];
+    self.cannotSelectLayerColor = [[UIColor whiteColor] colorWithAlphaComponent:0.6];
     self.allowCameraLocation = YES;
     
     self.iconThemeColor = [UIColor colorWithRed:54 / 255.0 green:181 / 255.0 blue:157 / 255.0 alpha:1.0];

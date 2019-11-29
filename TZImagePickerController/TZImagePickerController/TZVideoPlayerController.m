@@ -119,7 +119,7 @@
         [_doneButton setTitleColor:tzImagePickerVc.oKButtonTitleColorNormal forState:UIControlStateNormal];
     } else {
         [_doneButton setTitle:@"发送" forState:UIControlStateNormal];
-        [_doneButton setTitleColor:[UIColor colorWithRed:(130/255.0) green:(194/255.0) blue:(171/255.0) alpha:1.0] forState:UIControlStateNormal];
+        [_doneButton setTitleColor:[UIColor colorWithRed:(54/255.0) green:(181/255.0) blue:(157/255.0) alpha:1.0] forState:UIControlStateNormal];
     }
     [_doneButton setTitleColor:tzImagePickerVc.oKButtonTitleColorDisabled forState:UIControlStateDisabled];
     [_toolBar addSubview:_doneButton];

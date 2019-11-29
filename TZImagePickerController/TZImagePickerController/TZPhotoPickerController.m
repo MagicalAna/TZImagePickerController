@@ -165,7 +165,7 @@ static CGFloat itemMargin = 5;
 - (void)configCollectionView {
     _layout = [[UICollectionViewFlowLayout alloc] init];
     _collectionView = [[TZCollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:_layout];
-    _collectionView.backgroundColor = [UIColor whiteColor];
+    _collectionView.backgroundColor = [UIColor colorWithRed:55 / 255 green:55 / 255 blue:55 / 255 alpha:1];
     _collectionView.dataSource = self;
     _collectionView.delegate = self;
     _collectionView.alwaysBounceHorizontal = NO;
@@ -215,7 +215,7 @@ static CGFloat itemMargin = 5;
     if (!tzImagePickerVc.showSelectBtn) return;
     
     _bottomToolBar = [[UIView alloc] initWithFrame:CGRectZero];
-    CGFloat rgb = 253 / 255.0;
+    CGFloat rgb = 56 / 255.0;
     _bottomToolBar.backgroundColor = [UIColor colorWithRed:rgb green:rgb blue:rgb alpha:1.0];
     
     _previewButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -275,7 +275,7 @@ static CGFloat itemMargin = 5;
     _numberLabel.backgroundColor = [UIColor clearColor];
     
     _divideLine = [[UIView alloc] init];
-    CGFloat rgb2 = 222 / 255.0;
+    CGFloat rgb2 = 56 / 255.0;
     _divideLine.backgroundColor = [UIColor colorWithRed:rgb2 green:rgb2 blue:rgb2 alpha:1.0];
     
     [_bottomToolBar addSubview:_divideLine];
